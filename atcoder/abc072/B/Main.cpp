@@ -7,7 +7,10 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string s; cin>>s;
+    for(int i = 0; i < s.size(); i+=2){
+        cout<<s[i];
+    }
+    cout<<endl;
     return 0;
 }
