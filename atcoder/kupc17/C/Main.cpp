@@ -41,24 +41,23 @@ ll shash(string s){
 //     return res;
 // }
 
-bool rec(ll a, ll k, string str){
-    cout<<"Now str = "<<str<<endl;
-    bool res;
-    if(k==0){
-        ans = str;
-        return true;
-    }
-    if(k<0) return false;
-    for(int i = 26; i >= 12; i--){
-        string tmp(1, char('a'+i-1));
-        if(dp[str+tmp]==0){
-            dp[str+tmp] = a*i;
-        }
-        // res = rec(a*A,k-(a*i),str+tmp);
-        if(res) break;
-    }
-    return res;
-}
+string ans;
+
+// bool rec(ll a, ll k, string str){
+//     cout<<"Now str = "<<str<<endl;
+//     bool res;
+//     if(k==0){
+//         ans = str;
+//         return true;
+//     }
+//     if(k<0) return false;
+//     for(int i = 26; i >= 1; i--){
+//         string tmp(1, char('a'+i-1));
+//         res = rec(a*A,k-(a*i),str+tmp);
+//         if(res) break;
+//     }
+//     return res;
+// }
 
 
 int main(void){
@@ -69,8 +68,8 @@ int main(void){
     // while(cursor<S.size()){
         
     // }
-    // string s;
-    // rec(1,shash(S),s);
+    string s;
+    rec(1,shash(S),s);
     cout<<ans<<endl;
     return 0;
 }
