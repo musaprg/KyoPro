@@ -8,6 +8,7 @@
         "locale": "cpp",
         "__locale": "cpp",
         "__string": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "ios": "cpp"
     }
 }
