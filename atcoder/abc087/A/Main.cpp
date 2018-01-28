@@ -14,7 +14,7 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int x,a,b; cin>>x>>a>>b;
+    cout<<(x-a)%b<<endl;
     return 0;
 }

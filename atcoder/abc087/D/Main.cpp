@@ -14,7 +14,29 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int N,M; cin>>N>>M;
+    int D[N+1][N+1];
+    for(int i = 0; i <= N; i++)
+        for(int j = 0; j < N+1; j++)
+            D[i][j] = -1;
+    for(int i = 0; i < M; i++){
+        int l,r,d; cin>>l>>r>>d;
+        D[l][r] = D[r][l] = d;
+    }
+    for(int i = 1; i <= N; i++){
+        for(int j = 2; j <= N; j++){
+            for(int k = 3; k <= N; k++){
+                if(D[i][j]==-1 || D[j][k]==-1 || D[i][k]==-1) continue;
+                // cout<<i<<" "<<j<<" "<<k<<endl;
+                if(D[i][k] != D[i][j] + D[j][k]){
+                    cout<<"No"<<endl;
+                    return 0;
+                }
+            }
+        }
+    }
+
+    cout<<"Yes"<<endl;
+
     return 0;
 }
