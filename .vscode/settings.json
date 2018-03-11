@@ -39,6 +39,10 @@
         "bitset": "cpp",
         "functional": "cpp",
         "iterator": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "__bit_reference": "cpp",
+        "chrono": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp"
     }
 }
