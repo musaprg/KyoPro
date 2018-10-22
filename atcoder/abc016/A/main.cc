@@ -7,7 +7,8 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int m,d;
+    cin>>m>>d;
+    cout<<(m%d==0?"YES":"NO")<<endl;
     return 0;
 }

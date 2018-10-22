@@ -7,7 +7,8 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int a,b;
+    cin>>a>>b;
+    printf("%d %d\n", b, a);
     return 0;
 }

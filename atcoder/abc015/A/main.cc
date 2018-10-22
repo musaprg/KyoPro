@@ -7,7 +7,8 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string a,b;
+    cin>>a>>b;
+    cout<<(a.size()>b.size()?a:b)<<endl;
     return 0;
 }
