@@ -7,7 +7,13 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    vector<int> A;
+    int N,S,T,W; cin>>N>>S>>T>>W;
+    for(int i=0;i<N-1;i++){
+        int a; cin>>a;
+        A.push_back(a);
+    }
+    
+
     return 0;
 }
