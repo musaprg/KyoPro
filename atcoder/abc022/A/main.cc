@@ -7,13 +7,14 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    vector<int> A;
     int N,S,T,W; cin>>N>>S>>T>>W;
+    int ans = (S<=W&&W<=T)?1:0;
     for(int i=0;i<N-1;i++){
-        int a; cin>>a;
-        A.push_back(a);
+        int A; cin>>A;
+        W += A;
+        ans += (S<=W&&W<=T)?1:0;
     }
-    
+    cout<<ans<<endl;
 
     return 0;
 }

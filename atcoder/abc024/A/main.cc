@@ -7,7 +7,9 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int A,B,C,K,S,T;
+    cin>>A>>B>>C>>K>>S>>T;
+    int ST = S+T;
+    cout<<(S*A+T*B-ST*((ST>=K)?C:0))<<endl;
     return 0;
 }

@@ -7,7 +7,7 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int N; cin>>N;
+    cout<<(N/10+N%10)<<endl;
     return 0;
 }
