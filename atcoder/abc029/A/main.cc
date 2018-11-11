@@ -7,7 +7,8 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string W;
+    cin>>W;
+    cout<<W<<"s"<<endl;
     return 0;
 }

@@ -7,7 +7,17 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string S;
+    int N,count=1;
+    bool bContinueFlag = true;
+    cin>>S>>N;
+    for(int i = 0; i < S.size() && bContinueFlag; ++i){
+        for(int j = 0; j < S.size() && bContinueFlag; ++j){
+            if(count==N){
+                cout<<S[i]<<S[j]<<endl;
+                bContinueFlag = false;
+            } else ++count; 
+        }
+    }
     return 0;
 }
