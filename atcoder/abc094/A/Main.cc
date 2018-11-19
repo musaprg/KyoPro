@@ -7,7 +7,8 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int x,y; cin>>x>>y;
-    cout<<(x+y/2)<<endl;
+    int a,b,x;
+    cin>>a>>b>>x;
+    cout<<((a>x||(a+b)<x)?"NO":"YES")<<endl;
     return 0;
 }

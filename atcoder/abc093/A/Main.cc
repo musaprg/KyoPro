@@ -7,7 +7,9 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string s;
+    cin>>s;
+    sort(s.begin(), s.end());
+    cout<<((s == "abc")?"Yes":"No")<<endl;
     return 0;
 }

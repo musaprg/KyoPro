@@ -7,7 +7,8 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int x,y;
+    cin>>x>>y;
+    cout<<(x>y?"Worse":"Better")<<endl;
     return 0;
 }

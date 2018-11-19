@@ -7,7 +7,11 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int a,b,c,ans=0;
+    cin>>a>>b>>c;
+    if(a>b)
+        cout<<(c/b+(c%b)/a)<<endl;
+    else
+        cout<<(c/a+(c%a)/b)<<endl;
     return 0;
 }

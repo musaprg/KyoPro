@@ -7,7 +7,6 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int a,b;cin>>a>>b;cout<<(a-1)*(b-1)<<endl;
     return 0;
 }

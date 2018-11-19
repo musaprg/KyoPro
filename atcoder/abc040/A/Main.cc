@@ -7,7 +7,9 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int n,x;
+    cin>>n>>x;
+    int a=n-x,b=x-1;
+    cout<<(a>b?b:a)<<endl;
     return 0;
 }

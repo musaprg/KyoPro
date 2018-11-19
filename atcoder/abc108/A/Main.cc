@@ -7,7 +7,8 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int K;
+    cin>>K;
+    cout<<(K/2)*(K-K/2)<<endl;
     return 0;
 }

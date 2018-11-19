@@ -7,7 +7,10 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string n;
+    cin>>n;
+    for(auto c : n)
+        cout<<(c=='9'?'1':'9');
+    cout<<endl;
     return 0;
 }

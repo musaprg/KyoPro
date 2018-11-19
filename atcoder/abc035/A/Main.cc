@@ -7,7 +7,10 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    int W,H; cin>>W>>H;
+    if(W%16==0){
+        if(H%9==0) cout<<"16:9"<<endl;
+        else cout<<"4:3"<<endl;
+    }else cout<<"4:3"<<endl;
     return 0;
 }

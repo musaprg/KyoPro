@@ -7,7 +7,9 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string s;
+    int i;
+    cin>>s>>i;
+    cout<<s[i-1]<<endl;
     return 0;
 }

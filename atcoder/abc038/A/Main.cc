@@ -7,7 +7,9 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N;
-    cin>>N;
+    string S;
+    cin>>S;
+    if(S[S.size()-1] == 'T') cout<<"YES"<<endl;
+    else cout<<"NO"<<endl;
     return 0;
 }
