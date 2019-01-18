@@ -7,23 +7,22 @@ using namespace std;
 
 int main(void){
     cin.sync_with_stdio(false);
-    int N,K;
+    ll N,K;
     cin>>N>>K;
     vector<ll> hh;
-    vector<ll> dhh;
-    for(int i = 0; i < N; i++){
+    vector<ll> ans;
+    for(ll i = 0; i < N; i++){
         ll tmp;
         cin>>tmp;
         hh.emplace_back(tmp);
     }
     sort(hh.begin(), hh.end());
 
-    int ans = INFTY;
-    for(int i = 0; i < N-K+1; i++){
-        ll tmp = hh[i+K-1]-hh[i];
-        ans = ans>tmp?tmp:ans;
+    for(ll i = 0; i < N-K+1; i++){
+        ans.emplace_back(hh[i+K-1]-hh[i]);
     }
-    cout<<ans<<endl;
+    sort(ans.begin(), ans.end());
+    cout<<ans[0]<<endl;
 
     return 0;
 }
