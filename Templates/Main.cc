@@ -33,11 +33,11 @@ template<class T> inline T sqr(T x) {return x*x;}
 
 //typedef
 //------------------------------------------
-typedef vector<int> VI;
-typedef vector<VI> VVI;
-typedef vector<string> VS;
-typedef pair<int, int> PII;
-typedef long long LL;
+typedef vector<int>     VI;
+typedef vector<VI>      VVI;
+typedef vector<string>  VS;
+typedef pair<int, int>  PII;
+typedef long long       LL;
 
 //container util
 //------------------------------------------
@@ -53,13 +53,13 @@ typedef long long LL;
 //repetition
 //------------------------------------------
 #define FOR(i,a,b) for(int i=(a);i<(b);++i)
-#define REP(i,n)  FOR(i,0,n)
+#define REP(i,n) FOR(i,0,n)
 
 //constant
 //--------------------------------------------
-const double EPS = 1e-10;
-const double PI  = acos(-1.0);
-const int INFTY  = (1<<21)
+const double    EPS     = 1e-10;
+const double    PI      = acos(-1.0);
+const int       INFTY   = (1<<21);
 
 //clear memory
 #define CLR(a) memset((a), 0 ,sizeof(a))
