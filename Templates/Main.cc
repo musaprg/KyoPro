@@ -16,7 +16,7 @@ typedef long long ll;
 #define SORT(c) sort((c).begin(),(c).end())
 
 // repetition
-#define FOR(i,a,b) for(ll i=(a);i<(b);++i)
+#define FOR(i,a,n) for(ll i = ((ll) a); i < ((ll) n); ++i)
 #define REP(i,n) FOR(i,0,n)
 
 //constant
