@@ -1,21 +1,18 @@
-def select(S, used, i: int):
-    ans = 0
-    if i == len(S)-1:
-        return 0
-    if used[s[i]] == None:
-        tmp = used.copy()
-        tmp[s[i]] = 1
-        ans += 1 + select(S, used, i+1)
-
-        
-        
-
 def main():
     N = int(input())
     S = input()
-    ans = 0
-    ans += len(S) # 1文字
-    
+    ans = {}
+    for s in range(ord('a'),ord('z')+1):
+        ans[chr(s)] = 0
+    for s in S:
+        if not ans[s]:
+            ans[s] = 1
+        else:
+            ans[s] += 1
+    res = 1
+    for _, v in ans.items():
+        res *= v+1
+    return res - 1
 
 
 if __name__ == '__main__':
