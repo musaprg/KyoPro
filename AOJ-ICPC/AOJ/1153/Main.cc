@@ -27,15 +27,20 @@ int main(void){
             cin>>hanako[i];
             hanakosum+=hanako[i];
         }
-        for(int i = 0; i < n && cont; i++){
-            for(int j = 0; j < m && cont; j++){
-                if(tarosum+2*hanako[j]==hanakosum+2*taro[i]){
-                    printf("%d %d\n", taro[i], hanako[j]);
-                    cont = false;
+        int ansa=0,ansb=0,ansum=INFTY;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if((tarosum-taro[i]+hanako[j])==(hanakosum-hanako[j]+taro[i])){
+                    if(taro[i]+hanako[j]<ansum){
+                        ansa = taro[i];
+                        ansb = hanako[j];
+                        ansum = taro[i]+hanako[j];
+                    }
                 }
             }
         }
-        if(cont) cout<<"-1"<<endl;
+        if(ansum==INFTY) cout<<"-1"<<endl;
+        else cout<<ansa<<" "<<ansb<<endl;
     }
     return 0;
 }
