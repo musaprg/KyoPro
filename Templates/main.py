@@ -1,5 +1,5 @@
 import sys
-from collctions import defaultdict, Counter, deque
+from collections import defaultdict, Counter, deque
 from itertools import accumulate, permutations, combinations
 from operator import itemgetter
 from bisect import bisect_left, bisect_right, bisect
