@@ -21,9 +21,10 @@ def main():
         for d,c in zip(dlist,clist):
             if d == 1:
                 newm = [[0]*m for _ in range(max(n-c,c))]
-                for i in range(n):
-                    for j in range(c):
-                        newm[i][j] = 
+                # 0 ~ c
+                
+                # c ~ n
+
             else:
                 newm = [[0 for _ in range(m)] for _ in range(max(n-c,c))]
                 for i in range(n):

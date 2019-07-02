@@ -8,21 +8,15 @@ from fractions import gcd
 from math import ceil, floor, sqrt, cos, sin, pi
 from copy import deepcopy
 
+# If you use recursive call, uncomment this code
+#sys.setrecursionlimit(10**6)
+
 def main():
-    Q = int(input())
-    for _ in range(Q):
-        n = input()
-        count = 0
-        while len(n) > 1:
-            if count == 1000000:
-                count = -1
-                break
-            tmp = 0
-            for i in range(1,len(n)):
-                tmp = max(tmp, int(n[:i])*int(n[i:]))
-            count += 1
-            n = str(tmp)
-        print(count) 
+    n = int(input())
+    dd = list(map(int, input().split()))
+    dd.sort()
+    k = n//2
+    print(dd[k]-dd[k-1])
 
 if __name__ == '__main__':
     main()
