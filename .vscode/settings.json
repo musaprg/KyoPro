@@ -43,6 +43,8 @@
         "__bit_reference": "cpp",
         "chrono": "cpp",
         "set": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "random": "cpp"
     }
 }
