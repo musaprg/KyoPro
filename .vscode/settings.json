@@ -46,5 +46,6 @@
         "unordered_map": "cpp",
         "vector": "cpp",
         "random": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
