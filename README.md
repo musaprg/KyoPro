@@ -1,3 +1,3 @@
 # KyoPro
 
-Solvers for various programming competitions.
+Solvers and Libraries for various programming competitions.
