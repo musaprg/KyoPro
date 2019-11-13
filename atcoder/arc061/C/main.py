@@ -18,8 +18,31 @@ def parse():
 def main():
     S = input()
     ans = 0
-    for i in range(1<<(len(S)-1)): 
-        ans +=  
+    nn = len(S)-1
+    for i in range(1<<nn): # bit flag to insert '+'
+        #print(bin(i))
+        end = len(S)
+        for j in range(nn):
+            if 1<<j & i:
+                start = len(S)-1-j
+                s = S[start:end]
+                #print(start,end)
+                #print(s)
+                try:
+                    ans += int(s)
+                except:
+                    pass
+                end = start
+        s = S[:end]
+        #print(s)
+        try:
+            ans += int(s)
+        except:
+            pass
+        #print()
+    print(ans)
+
+
 
 if __name__ == '__main__':
     main()
