@@ -1,20 +1,16 @@
+from math import sqrt
+
 def solve(target):
-    primenums = []
+    candidates = list(range(2,target))
+    ans = 0
 
-    n = 1
+    for p in candidates:
+        ans += p
+        for i,n in enumerate(candidates):
+            if n % p == 0:
+                del candidates[i]
 
-    while len(primenums) < target:
-        n += 1
-        is_prime = True
-        for i in primenums:
-            if n % i == 0:
-                is_prime = False
-                break
-        if not is_prime:
-            continue
-        primenums.append(n)
-
-    return sum(primenums)
+    return ans
 
 if __name__ == '__main__':
     assert solve(10), 17
