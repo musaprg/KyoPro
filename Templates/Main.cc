@@ -3,11 +3,11 @@
 using namespace std;
 
 // typedef
-typedef long long ll;
-typedef vector<int> vi;
-typedef vector<vi> vvi;
-typedef vector<long long> vll;
-typedef vector<string> vs;
+using ll = long long;
+using vi = vector<int>;
+using vvi = vector<vi>;
+using vll = vector<ll>;
+using vs = vector<string>;
 
 // container util
 #define ALL(a)  (a).begin(),(a).end()
@@ -15,18 +15,26 @@ typedef vector<string> vs;
 #define PB push_back
 #define EB emplace_back
 #define MP make_pair
-#define SZ(a) int((a).size())
+#define MT make_tuple
 #define EACH(i,c) for(typeof((c).begin()) i=(c).begin(); i!=(c).end(); ++i)
 #define EXIST(s,e) ((s).find(e)!=(s).end())
 #define SORT(c) sort((c).begin(),(c).end())
+
+//#define int long long
 
 // repetition
 #define FOR(i,m,n) for(ll (i) = ((ll) m); (i) < ((ll) n); ++(i))
 #define RFOR(i,m,n) for(ll (i) = ((ll) (m)-1); (i) >= ((ll) n); --(i))
 #define REP(i,n) FOR(i,0,n)
+#define REPR(i,n) RFOR(i,0,n)
 
 // i/o
 #define TFOUT(b,t,f) cout << ((b)? (t) : (f)) << endl
+
+// template
+template<class C>int size(const C &c){ return c.size(); }
+template<class T,class U>bool chmin(T&a,const U&b){if(a<=b)return false;a=b;return true;}
+template<class T,class U>bool chmax(T&a,const U&b){if(a>=b)return false;a=b;return true;}
 
 //constant
 const double    EPS     = 1e-10;
