@@ -47,5 +47,6 @@
         "vector": "cpp",
         "random": "cpp"
     },
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "python.pythonPath": "/Users/kotaro/.pyenv/versions/3.6.6/bin/python"
 }
